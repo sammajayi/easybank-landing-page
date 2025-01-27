@@ -1,8 +1,249 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
 
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
 
+  body {
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x:hidden;
+  }
 
-.footer-div{
+header{
+   background-color: var(--white);
+   /* margin: 0.5rem 1rem; */
+}
+
+.navbar{
     display: flex;
-    flex-direction: row;
+    height: 70px;
+    justify-content:space-around;
+    background-color: var(--white);
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+   
+    
+}
+
+.logo{
+    height: 20px;
+}
+
+nav{
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+ ul a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+
+
+.cta-button{
+    background-color: var(--lime-green);
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+/* design for the hero page */
+.hero-page{
+    background-color: var(--light-grayish-blue);
+  padding: 4rem;
+}
+
+.hero-page-div{
+    display: flex;
+    align-items: center;
+  place-items: center;
+    width:100%;
+    
+}
+
+.hero-page-text h1{
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--dark-blue);
+    line-height: 4.5rem;
+}
+
+.hero-page-text p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-page-text{
+    width: 50%;
+}
+
+.hero-page-image{
+    width: 500px;
+    overflow: visible;
+    position: relative;
+}
+
+.hero-page-image img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left:-0px;
+    top: -345px;
+    z-index: 1;
+}
+
+
+/* styles for second section */
+.second-section{
+    background-color: var(--grayish-blue);
+    padding: 3rem;
+}
+
+.easybank-features{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+   
+}
+
+.why-choose h2{
+font-weight: 700;
+font-size: 2rem;
+color: var(--light-grayish-blue)
+
+}
+
+.why-choose p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--light-grayish-blue)
+}
+
+
+
+.features-group{
+    display:flex;
+}
+
+.features{
+    width:30%
+    
+}
+
+
+
+
+
+
+/* styles for articles page */
+.blog-section{
+background-color: var(--light-grayish-blue);
+padding:3rem;
+
+}
+
+.blog-container{
+    width:80%;
+    
+}
+
+.blog-grid{
+    display: flex;
+    gap:2rem;
+    margin: 0 auto;
+}
+
+.blog-articles{
+    width:50%;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-articles > img{
+    width:100%;
+    height: fit-content;
+    
+}
+
+
+
+
+
+
+
+
+/* styles for footer */
+
+footer{
+    background-color: var(--dark-blue);
+    padding:3rem;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-around;
+  
+  }
+
+.icons-group{
+    gap:20px;
+}
+
+.social-icons{
+    padding-top: 20px;
+    
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer-links a:hover{
+    color: var(--lime-green)
+}
+
+.last-footer-div{
+    justify-content: center;
+    text-align: center;
+}
+
+.last-footer-div p{
+    padding-top: 20px;;
+    color: var(--grayish-blue)
 }
