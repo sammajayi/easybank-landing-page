@@ -19,25 +19,28 @@
   body {
     font-family: 'Public Sans', sans-serif;
     line-height: 1.6;
-    width: 100%;
     overflow-x:hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
 header{
    background-color: var(--white);
-   /* margin: 0.5rem 1rem; */
+   
 }
 
 .navbar{
     display: flex;
     height: 70px;
-    justify-content:space-around;
+    justify-content:space-evenly;
     background-color: var(--white);
     align-items: center;
     max-width: 100%;
     position: relative;
     z-index: 2;
-   
+   margin-right: auto;
+   margin-left: auto`;
     
 }
 
@@ -77,17 +80,23 @@ ul {
     cursor:pointer;
 }
 
+.mobile-menu-container{
+    display:none;
+}
+
 /* design for the hero page */
 .hero-page{
     background-color: var(--light-grayish-blue);
-  padding: 4rem;
+  padding: 5rem;
 }
 
 .hero-page-div{
     display: flex;
+    justify-content: center;
     align-items: center;
-  place-items: center;
-    width:100%;
+    width:90%;
+    gap:3rem;
+    margin: 0 auto;
     
 }
 
@@ -99,63 +108,71 @@ ul {
 }
 
 .hero-page-text p{
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     color: var(--grayish-blue);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .hero-page-text{
-    width: 50%;
+    width: 40%;
 }
 
 .hero-page-image{
-    width: 500px;
+    width: 50%;
     overflow: visible;
     position: relative;
 }
 
 .hero-page-image img{
-    width: 600px;
+    width: 100%;
     height: auto;
     position: absolute;
     left:-0px;
-    top: -345px;
+    top: -355px;
     z-index: 1;
+    
 }
 
 
 /* styles for second section */
 .second-section{
     background-color: var(--grayish-blue);
-    padding: 3rem;
+    padding: 5rem;
+   
 }
 
 .easybank-features{
     display: flex;
     flex-direction: column;
     width:80%;
+    justify-content:center;
+    margin: 0 auto;
    
 }
 
 .why-choose h2{
 font-weight: 700;
 font-size: 2rem;
-color: var(--light-grayish-blue)
-
+color: var(--light-grayish-blue);
+margin-bottom: 10px;
 }
 
 .why-choose p{
     font-weight: 500;
     font-size: 1rem;
-    color: var(--light-grayish-blue)
+    color: var(--light-grayish-blue);
+    width:50%;
+    margin-bottom: 10px;
 }
 
 
 
 .features-group{
     display:flex;
+    gap:1rem;
+    margin-top: 40px;
 }
 
 .features{
@@ -163,6 +180,13 @@ color: var(--light-grayish-blue)
     
 }
 
+.features h4{
+    color: var(--dark-blue)
+}
+
+.features p{
+    color: var(--very-light-gray)
+}
 
 
 
@@ -177,17 +201,24 @@ padding:3rem;
 
 .blog-container{
     width:80%;
+    margin: 0 auto;
     
+}
+
+.blog-container-heading{
+   margin-bottom: 30px;
+    text-align: left;
 }
 
 .blog-grid{
     display: flex;
     gap:2rem;
-    margin: 0 auto;
+   
 }
 
 .blog-articles{
-    width:50%;
+    width:30%;
+  
     background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
@@ -195,12 +226,35 @@ padding:3rem;
 
 .blog-articles > img{
     width:100%;
-    height: fit-content;
+    /* height: fit-content; */
     
 }
 
+.blog-articles-div{
+    margin: 20px 20px;
+}
 
+.blog-articles-div p{
+    font-size: 0.9rem;
+}
 
+.blog-articles-div h5{
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.blog-articles-div a{
+    text-decoration: none;
+    color: var(--grayish-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 0.1rem;
+
+}
+
+.blog-articles-div a:hover{
+    color: var(--lime-green);
+}
 
 
 
@@ -215,8 +269,8 @@ footer{
 
 .footer-div {
     display: flex;
-    justify-content: space-around;
-  
+    justify-content: space-evenly;
+
   }
 
 .icons-group{
@@ -245,5 +299,5 @@ footer{
 
 .last-footer-div p{
     padding-top: 20px;;
-    color: var(--grayish-blue)
+    color: var(--grayish-blue);
 }
