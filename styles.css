@@ -48,9 +48,6 @@ header{
     height: 20px;
 }
 
-nav{
-    
-}
 
 ul {
     display: flex;
@@ -66,10 +63,14 @@ ul {
     transition: color 0.3s ease;
   }
 
+  ul a:hover{
+    color: var(--lime-green)
+  }
+
 
 
 .cta-button{
-    background-color: var(--lime-green);
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: var(--white);
     border: none;
     border-radius: 15px;
@@ -176,7 +177,7 @@ margin-bottom: 10px;
 }
 
 .features{
-    width:30%
+    width:20%
     
 }
 
@@ -185,7 +186,8 @@ margin-bottom: 10px;
 }
 
 .features p{
-    color: var(--very-light-gray)
+    color: var(--very-light-gray);
+    font-weight: 400;
 }
 
 
@@ -238,9 +240,11 @@ padding:3rem;
     font-size: 0.9rem;
 }
 
-.blog-articles-div h5{
+.blog-articles-div  h5{
     margin-bottom: 10px;
     margin-top: 8px;
+    /* font-size:1rem;
+    font-weight: 700; */
 }
 
 .blog-articles-div a{
